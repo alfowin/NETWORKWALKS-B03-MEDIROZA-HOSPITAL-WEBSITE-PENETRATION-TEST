@@ -102,7 +102,7 @@ A generic 100-word list missed the third (a keyboard-pattern password); a **targ
 | robots.txt discloses sensitive paths | Low |
 | No WAF / no DNSSEC / exposed error log | Low |
 
-Full write-up: [`W4-PM-FINAL-Report-B083-Aime-Botuku.docx`](W4-PM-FINAL-Report-B083-Alfred Owino)
+Full write-up:(W4-PM-FINAL-Report-B083-Alfred Owino)
 
 ---
 
