@@ -6,7 +6,7 @@ trying to gain access into medirozahospitsal.com
 Week 4 capstone of the Networkwalks Cybersecurity & Ethical Hacking internship: a full black-box penetration test of an authorised training target, Mediroza General Hospital*. The engagement runs the complete attack lifecycle - reconnaissance, content discovery, exploitation, post-exploitation and a professional report.
 
 
-> LIABILITY DISCLAIMER
+> LIABILITY DISCLAIMER!
 >  All testing was performed under written authorisation from Networkwalks, against a target they provided for this exercise, and limited to the target domain only (no denial-of-service, no social engineering). Everything here is for education. Unauthorised testing of systems you do not own is illegal.
 
 
