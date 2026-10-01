@@ -3,7 +3,7 @@ trying to gain access into medirozahospitsal.com
 
 ![Batch](https://img.shields.io/badge/Batch-B083-blue) ![Program](https://img.shields.io/badge/Networkwalks-Cybersecurity%20Internship-red) ![Phase](https://img.shields.io/badge/Phase-Exploitation%20%26%20Pentest-green) ![Status](https://img.shields.io/badge/Week%204-Complete-brightgreen)
 
-Week 4 capstone of the Networkwalks Cybersecurity & Ethical Hacking internship: a full black-box penetration test of an authorised training target, Mediroza General Hospital*. The engagement runs the complete attack lifecycle - reconnaissance, content discovery, exploitation, post-exploitation and a professional report.
+The week four(4) of the Networkwalks Cybersecurity & Ethical Hacking internship: a full black-box penetration test of an authorised training target, Mediroza General Hospital*. The engagement runs the complete attack lifecycle - reconnaissance, content discovery, exploitation, post-exploitation and a professional report.
 
 
 > LIABILITY DISCLAIMER!
