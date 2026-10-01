@@ -37,11 +37,11 @@ recon --> content discovery --> exposed DB backup (M3)
 
 Passive/light recon on the target with standard Kali tools before any attack.
 
-![whois](f01-whois.png)
-![nslookup](f02-nslookup.png)
-![whatweb](f03-whatweb.png)
-![wafw00f](f04-wafw00f.png)
-![dnsrecon](f05-dnsrecon.png)
+![whois]
+![whatweb]
+![nslookup]
+![wafw00f]
+![dnsrecon]
 
 **Findings:** Namecheap shared hosting (IP redacted-in-summary), LiteSpeed + OpenResty/CDN, Mediroza CMS 1.4.2, **no WAF**, **SPF `~all`** (softfail) + **DMARC `p=none`** (e-mail spoofing exposure), **DNSSEC unsigned**.
 
@@ -51,9 +51,9 @@ Passive/light recon on the target with standard Kali tools before any attack.
 
 `robots.txt` advertises a hidden `/old/` directory; **directory listing is enabled**, exposing a full SQL database backup that anyone can download without logging in.
 
-![robots](f06-robots.png)
-![old listing](f07-old-listing.png)
-![sql backup](f10-sql-backup.png)
+![robots]
+![old listing]
+![sql backup]
 
 The backup exposes every employee's personal data (names, national IDs, phones, **salaries**) and the hospital's **shareholder register** - satisfying Milestone 3. No exploitation required.
 
@@ -65,9 +65,9 @@ The backup exposes every employee's personal data (names, national IDs, phones, 
 
 The patient login builds its SQL query directly from user input. A crafted payload in the username field comments out the password check and logs the attacker in without a password *(payload redacted)*.
 
-![login source](f11-login-source.png)
-![sqli login](f12-sqli-login.png)
-![lab reports](f13-lab-reports-access.png)
+![login source]
+![sqli login]
+![lab reports]
 
 Result: authentication bypassed and access to another user's confidential lab reports - the 3 target PDFs.
 
@@ -79,10 +79,9 @@ Result: authentication bypassed and access to another user's confidential lab re
 
 A locked PDF stores a one-way **hash** of its password, so cracking is **offline** - no server contact, no lockout, no logs. All three passwords were weak and fell against a wordlist in seconds *(passwords redacted)*.
 
-![crack1](f14-crack1.png)
-![crack2](f15-crack2.png)
-![crack3 denied](f16-crack3-denied.png)
-![crack3 success](f17-crack3-success.png)
+![crack1]
+![crack2]
+![crack3 success]
 
 A generic 100-word list missed the third (a keyboard-pattern password); a **targeted wordlist** recovered it immediately.
 
@@ -103,7 +102,7 @@ A generic 100-word list missed the third (a keyboard-pattern password); a **targ
 | robots.txt discloses sensitive paths | Low |
 | No WAF / no DNSSEC / exposed error log | Low |
 
-Full write-up: [`W4-PM-FINAL-Report-B083-Aime-Botuku.docx`](W4-PM-FINAL-Report-B083-Aime-Botuku.docx)
+Full write-up: [`W4-PM-FINAL-Report-B083-Aime-Botuku.docx`](W4-PM-FINAL-Report-B083-Alfred Owino)
 
 ---
 
@@ -118,3 +117,4 @@ Full write-up: [`W4-PM-FINAL-Report-B083-Aime-Botuku.docx`](W4-PM-FINAL-Report-B
 ---
 
 ## Author
+Alfred Owino (Cyber Security Proffessional)
