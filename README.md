@@ -3,28 +3,17 @@ trying to gain access into medirozahospitsal.com
 
 ![Batch](https://img.shields.io/badge/Batch-B083-blue) ![Program](https://img.shields.io/badge/Networkwalks-Cybersecurity%20Internship-red) ![Phase](https://img.shields.io/badge/Phase-Exploitation%20%26%20Pentest-green) ![Status](https://img.shields.io/badge/Week%204-Complete-brightgreen)
 
-Week 4 capstone of the Networkwalks Cybersecurity & Ethical Hacking internship: a full **black-box penetration test** of an authorised training target, *Mediroza General Hospital*. The engagement runs the complete attack lifecycle - reconnaissance, content discovery, exploitation, post-exploitation and a professional report.
+Week 4 capstone of the Networkwalks Cybersecurity & Ethical Hacking internship: a full black-box penetration test of an authorised training target, Mediroza General Hospital*. The engagement runs the complete attack lifecycle - reconnaissance, content discovery, exploitation, post-exploitation and a professional report.
 
-> **Spoiler-free:** the exact injection payload and the recovered file passwords are **redacted** in every screenshot and in this README, so the lab solution is not given away. The methodology is shown in full.
 
-> **Liability disclaimer.** All testing was performed under **written authorisation from Networkwalks**, against a target they provided for this exercise, and limited to the target domain only (no denial-of-service, no social engineering). Everything here is for education. Unauthorised testing of systems you do not own is illegal.
+> LIABILITY DISCLAIMER
+>  All testing was performed under written authorisation from Networkwalks, against a target they provided for this exercise, and limited to the target domain only (no denial-of-service, no social engineering). Everything here is for education. Unauthorised testing of systems you do not own is illegal.
 
----
 
-## The engagement in one line
 
-A hospital web application is compromised end-to-end using two Critical weaknesses - a **publicly exposed database backup** and a **SQL-injection authentication bypass** - then the recovered patient files are **cracked offline**.
+## OBJECTIVE/RESULT
 
-```
-recon --> content discovery --> exposed DB backup (M3)
-                            --> SQL injection auth bypass --> patient PDFs (M1) --> offline crack (M2)
-```
-
----
-
-## Objectives (milestones)
-
-| # | Milestone | Result |
+| # | Objective | Result |
 |---|-----------|--------|
 | M1 | Attack the site and retrieve 3 confidential patient PDF reports | Achieved via SQL injection auth bypass |
 | M2 | Crack the encryption on all 3 retrieved files | Achieved offline (weak passwords, redacted) |
@@ -33,7 +22,7 @@ recon --> content discovery --> exposed DB backup (M3)
 
 ---
 
-## 1. Reconnaissance (footprinting)
+## 1. RECONNAINSENCE(footprinting)
 
 Passive/light recon on the target with standard Kali tools before any attack.
 
